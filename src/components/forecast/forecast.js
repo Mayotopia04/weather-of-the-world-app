@@ -8,7 +8,7 @@ const Forecast = ({ data }) => {
     const dayInAWeek = new Date().getDay();
     const forecastDays = WEEK_DAYS.slice(dayInAWeek, WEEK_DAYS.length).concat(WEEK_DAYS.slice(0, dayInAWeek)
     );
-    console.log(forecastDays);
+    //console.log(forecastDays);
 
     return (
         <>
@@ -64,15 +64,8 @@ const Forecast = ({ data }) => {
                                     <label>{Math.round(item.main.feels_like)}°C</label>
 
                                 </div>
-
-
-
                             </div>
                         </AccordionItemPanel>
-
-
-
-
                     </AccordionItem>
                 ))}
 
